@@ -1,0 +1,375 @@
+<!-- 
+    Designed by: Rohit Jadhav
+    Date: 10/09/2021
+    Version: 1.0
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>NP Tech</title>
+
+    <meta name="description"
+        content="NP Tech is a full-service IT company that provides a wide range of services, including IT support, app development, UI/UX research, web app development, and data science. We are committed to delivering innovative solutions that meet your unique needs and help you succeed in today's digital landscape. Our customer-centric approach, attention to detail, and commitment to quality set us apart from other IT companies.">
+    <!-- meta keywords -->
+    <meta name="keywords"
+        content="NP Tech, IT company, IT support, app development, UI/UX research, web app development, data science, IT services, IT solutions, IT consulting, IT consulting services, IT consulting company, IT consulting firm, IT consulting services company, IT consulting services firm, IT consulting services provider, IT consulting services providers, IT consulting services provider company, IT consulting services provider firm, IT consulting services provider companies, IT consulting services provider firms, IT consulting services provider in India, UIUX designer, user experience consulting services company">
+    <!-- meta author -->
+    <meta name="author" content="Rohit Jadhav, Satish Pawar">
+
+
+    <link rel="shortcut icon" href="img/np tech favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <style>
+        .logo {
+            height: 40px;
+            padding: 15px;
+
+            width: max-content;
+            position: absolute;
+            left: 15px;
+        }
+    </style>
+
+    <nav>
+        <div class="logo"><img src="img/NP-Tech-LOGO.png" alt="NP Tech LOGO" style="
+                height: 100%;
+                width: 100%;
+
+                
+                "></div>
+        <div style="
+                        /* flex item in end */
+                        margin-left: auto;
+                        margin-top: 16px;
+                    ">
+
+            <style>
+                .active-state:active {
+                    color: var(--dark-color);
+                    text-decoration: none;
+                }
+            </style>
+            <a href="./index.html#portfolio" class="active-state">our work</a>
+            <a href="mailto:nptech26@gmail.com">Let's Discuss Tech! </a>
+        </div>
+    </nav>
+
+
+
+    <header style="
+            background-image: url(../img/mathew-schwartz-sb7RUrRMaC4-unsplash.jpg);
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 25px;
+        ">
+
+        <div style="max-width: 55ch;">
+            <h1 style="
+                font-size: 15px; 
+                font-weight: 300; 
+                margin: 15px 0; 
+                padding: 200px 30px 0 30px;
+                width: 90%;
+                text-align: left;
+    
+                color: var(--dark-color);
+                background-color: transparent;
+                ">NP Tech is a full-service IT company that provides a wide range of services, including IT support,
+                app development, UI/UX research, web app development, and data science.
+                <br><br> We are committed to delivering innovative solutions that meet your unique needs and help you
+                succeed in today's digital landscape.
+                <br><br>Our customer-centric approach, attention to detail, and commitment to quality set us apart from
+                other IT companies.</h1>
+        </div>
+    </header>
+    <main>
+
+
+
+        <style>
+            .services {
+
+                list-style: none;
+                display: grid;
+                /* responsive colum */
+                grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+                grid-gap: 7px;
+
+            }
+
+            .service {
+                position: relative;
+                border-radius: 8px;
+                margin-bottom: 16px;
+                text-align: center;
+            }
+
+            .service img {
+                height: 250px;
+            }
+
+            .service h3 {
+                margin: -13px auto;
+                position: absolute;
+                right: 0;
+                left: 0;
+                bottom: 5px;
+                z-index: 1;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .service:hover>img {
+                transform: scale(0.95);
+
+                border: 1px solid var(--primary-color);
+                transition: all 0.2s ease-in-out;
+            }
+
+            .service:hover>h3 {
+                transform: translateY(8px);
+
+                border: 1px solid var(--primary-color);
+                transition: all 0.2s ease-in-out;
+            }
+        </style>
+
+        <section id="services">
+
+            <h2 style="
+                    margin-right: auto;
+                    margin-left: auto;
+                ">our services</h2>
+
+            <ul class="services">
+                <li class="service">
+                    <img src="img/david-becker-crs2vlkSe98-unsplash-data-science-NP-tech.jpg"
+                        alt="Data Science by NP Tech">
+                    <h3>Data Science</h3>
+                </li>
+                <li class="service">
+                    <h3> e-commerce manager</h3>
+                    <img src="img/ecommerce by NP Tech.jpeg" alt="ecommerce by NP Tech">
+                </li>
+                <li class="service">
+                    <h3>App Development</h3>
+                    <img src="img/nils-huenerfuerst-qVtVhFQxuPg-unsplash-app-development-by-NPtech.jpg"
+                        alt="App Development by NP Tech">
+                </li>
+                <li class="service">
+                    <h3>UI/UX Research</h3>
+                    <img src="img/alvaro-reyes-qWwpHwip31M-unsplash-UIUX-designer-NP-Tech.jpg"
+                        alt="UI/UX Research by NP Tech">
+                </li>
+                <li class="service">
+                    <h3>Website Development</h3>
+                    <img src="img/cody-barnes-d2oA8t84zus-unsplash-website-developer-NPtech.jpg"
+                        alt="Hiranya Resorts Website Development by NP Tech">
+                </li>
+                <li class="service">
+                    <h3>IT Support</h3>
+                    <img src="img/christina-wocintechchat-com-0g-iLtxmMhA-unsplash-IT-support.jpg"
+                        alt="IT Support by NP Tech">
+                </li>
+
+            </ul>
+
+        </section>
+
+        <style>
+            .portfolio {
+                position: relative;
+                border-radius: 4px;
+            }
+
+            .projects {
+                display: grid;
+                grid-template-rows: 1fr;
+                gap: 8px;
+            }
+
+            .project {
+                /* responsive grid */
+
+                display: grid;
+                grid-template-columns: 1fr 300px;
+            }
+
+            .project img {
+                height: 950px;
+                z-index: 1;
+            }
+
+            .project h3 {
+                background-color: transparent;
+                color: var(--dark-color);
+                font-size: 18px;
+                border: 0;
+                margin: 0;
+                padding: 0;
+            }
+
+            .project p {
+                font-size: 14px;
+                padding: 0;
+                margin-top: 45px;
+            }
+
+            .project div {
+                position: sticky;
+                top: 10%;
+                height: max-content;
+                padding: 16px;
+
+            }
+
+            .project h4::before {
+                content: "- ";
+
+                
+            }
+        </style>
+
+        <section id="portfolio">
+            <h2 style="
+                    position: sticky;
+                    top: 27px;
+                    margin-left: auto;
+                    margin-right: 230px;
+                    margin-top: 160px;
+                    z-index: 10;
+                    font-size: 14px;
+                    height: max-content;
+                    padding: 0 24px;
+                    letter-spacing: normal;
+
+                ">our work</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="img/hiranya-resort-website-designed-by-RadicalRohit.png"
+                        alt="hiranya resort website designed by RadicalRohit">
+                    <div>
+
+                        <h3>Hiranya Resort</h3>
+                        <h4>UX Design</h4>
+                        <h4>web development</h4>
+                        <h4>wix</h4>
+                        <p>
+                            Designed and developed a user-friendly website for Hiranya Resorts, showcasing their luxury
+                            accommodations and amenities.
+                            Utilized a user-centered design approach to create an intuitive and visually appealing
+                            website that meets the needs of the target audience. </p>
+                        <p>
+                            Incorporated responsive design principles to ensure the website is accessible and functional
+                            across all devices.
+                            Collaborated closely with the client to ensure the final product aligns with their goals and
+                            brand identity.
+                        </p>
+                        
+                        <p><a href="https://www.hiranyaresorts.com">hiranyaresorts.com</a></p>
+                    </div>
+
+                </div>
+                <div class="project">
+                    <img src="img/environ-propacks-website-designed-by-RadicalRohit.png"
+                        alt="Environ Propacks website designed by RadicalRohit">
+                    <div>
+
+                        <h3>Environ Propacks</h3>
+                        <h4>UX Design</h4>
+                        <h4>Branding</h4>
+                        <h4>web development</h4>
+                        <p>
+                            Designed and developed a user-friendly website for Environ Propacks, showcasing their products and services.
+                            Utilized a user-centered design approach to create an intuitive and visually appealing
+                            website that meets the needs of the target audience. </p>
+                        <p>
+                            Incorporated responsive design principles to ensure the website is accessible and functional
+                            across all devices.
+                            Collaborated closely with the client to ensure the final product aligns with their goals and
+                            brand identity.
+                        </p>
+                        
+                        <p><a href="https://environ-propack.web.app/">environ-propack.web.app</a></p>
+                    </div>
+
+                </div>
+                <div class="project">
+                    <img src="img/madhav-irrigation-website-designed-by-RadicalRohit.png"
+                        alt="Madhav Irrigation website designed by RadicalRohit">
+                    <div>
+
+                        <h3>Madhav Irrigation</h3>
+                        <h4>Data Science</h4>
+                        <h4>website designing</h4>
+                        <h4>e-commerce development</h4>
+                        <h4>SEO</h4>
+                        <p>
+                            Designed and developed a user-friendly website for Madhav Irrigation, showcasing their products and services.
+                            Utilized a user-centered design approach to create an intuitive and visually appealing
+                            website that meets the needs of the target audience. </p>
+                        <p>
+                            Incorporated responsive design principles to ensure the website is accessible and functional
+                            across all devices.
+                            Collaborated closely with the client to ensure the final product aligns with their goals and
+                            brand identity.
+                        </p>
+                        
+                        
+                    </div>
+
+                </div>
+
+        </section>
+
+    </main>
+    <footer>
+
+
+            <h2>Let's Discuss your TECH project </h2>
+            <p>
+                mail: <a href="mailto:nptech26@gmail.com">nptech26@gmail.com</a><br>
+                phone: <a href="tel:+91 955260 2626">+91 955260 2626</a><br>
+                instagram: <a href="https://www.instagram.com/noproblem.tech">@noproblem.tech</a>
+            </p>
+
+
+
+        <br>
+
+        <p>
+            <a href="./index.html">home</a>
+            <a href="./index.html">services</a>
+            <a href="./index.html#portfolio">portfolio</a>
+            <a href="./blogs.html"  style="padding: 20px;">blogs</a>
+            
+            <a href="./jobs.html"  style="padding: 10px; color: crimson;">We are Hiring!!!</a>
+        </p>
+
+
+        <br>
+        <p>
+            <small> © 2021 NP Tech. All rights reserved.</small>
+        </p>
+
+
+    </footer>
+
+</body>
+
+</html>

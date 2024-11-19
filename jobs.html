@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOBS AT NP TECH</title>
+
+    <!-- meta author -->
+    <meta name="author" content="Rohit Jadhav, Satish Pawar">
+
+
+    <link rel="shortcut icon" href="img/np tech favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #386fa4;
+            --light: #d6d6d6;
+            --dark: #1d1818;
+            --dark-50: #919191;
+            --success: #38a460;
+            --danger: #a43838;
+            --warning: #d5c623;
+            --white: #fff;
+            --trigger-mobile: 400px;
+        }
+
+        * {
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            margin: 0;
+            padding: 0;
+        }
+
+        *,
+        *::before,
+        *::after {
+            -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+        }
+
+        *::-moz-selection {
+            background: var(--primary);
+            /* WebKit/Blink Browsers */
+            color: var(--light);
+        }
+
+        *::selection {
+            background: var(--primary);
+            /* WebKit/Blink Browsers */
+            color: var(--light);
+        }
+
+        ::-moz-selection {
+            background: var(--primary);
+            /* Gecko Browsers */
+            color: var(--light);
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Source Code Pro', monospace;
+            cursor: url(../img/mouse.png), auto;
+            position: relative;
+            font-size: 14px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            scrollbar-width: none;
+            position: relative;
+        }
+
+        p::first-letter {
+            text-transform: capitalize;
+        }
+
+        p small {
+            display: block;
+            line-height: 1.4;
+            font-size: x-small;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        section .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2vmin;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .button-sm {
+            display: inline-block;
+            margin: 40px 0;
+            padding: 14px 20px;
+            border-radius: 5px;
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .button-sm:hover {
+            -webkit-transform: translateY(7px);
+            transform: translateY(7px);
+            background: var(--dark-50);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /*# sourceMappingURL=root.css.map */
+
+
+        nav {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 0.5fr 2fr;
+            grid-template-columns: 0.5fr 2fr;
+            position: fixed;
+            z-index: 5;
+            width: 100vw;
+            padding: 14px;
+        }
+
+        nav .menu {
+            width: 30px;
+            -ms-grid-column-align: end;
+            justify-self: end;
+        }
+
+        nav .menu:hover #menu {
+            -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+        }
+
+        environ-propacks-logo[data-logo-type=""] {
+            margin: 20px;
+            display: inline-block;
+            width: 100px;
+        }
+
+        .menu__button {
+            width: 80px;
+            background-color: var(--dark);
+            padding-left: 1ch;
+            position: absolute;
+            right: 0;
+            z-index: 999;
+            color: var(--light);
+        }
+
+        .menu__button:hover {
+            -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+        }
+
+        .menu__button__checkbox {
+            display: none;
+        }
+
+        .menu__button__checkbox:checked~.menu__sidebar {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        .menu__item {
+            font-size: 20px;
+            margin-top: 40px;
+            padding: 14px;
+        }
+
+        .menu__item li {
+            margin-bottom: 14px;
+            color: var(--dark);
+        }
+
+        .menu__item li:hover {
+            color: var(--primary);
+        }
+
+        .menu__sidebar {
+            background: var(--light);
+            z-index: 4;
+            text-align: right;
+            height: 100vh;
+            padding: 24px 0 0 40px;
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+            margin: 0 auto;
+            position: fixed;
+            right: 0;
+            top: 0;
+            -webkit-transform: translateX(calc(100% - 5%));
+            transform: translateX(calc(100% - 5%));
+        }
+
+        .social__media__links {
+            position: fixed;
+            bottom: 24px;
+            right: 14px;
+            font-size: small;
+        }
+
+        .social__media__links li {
+            padding: 7px 7px;
+        }
+
+
+        .social__media__links li:hover {
+            -webkit-transform: translateY(-7px) scale(1.5);
+            transform: translateY(-7px) scale(1.5);
+        }
+
+        .social_icon {
+            padding: auto 30px;
+        }
+
+        .social_icon::after {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            vertical-align: middle;
+            width: 12px;
+        }
+
+        .fb::after {
+            content: '';
+            content: url(../img/social_media/fb.svg);
+        }
+
+        .instagram::after {
+            content: '';
+            content: url(../img/social_media/instagram.svg);
+        }
+
+        .linkedin::after {
+            content: '';
+            content: url(../img/social_media/linkedin.svg);
+        }
+
+        .medium::after {
+            content: '';
+            content: url(../img/social_media/medium.svg);
+        }
+
+        body {
+            background-color: var(--white);
+        }
+
+        h1 {
+            font-size: 40px;
+            font-family: 'Avenir Black';
+            line-height: 0.8;
+            margin-top: 28px;
+        }
+
+        h1 small {
+            font-size: 30px;
+            font-family: 'Avenir Roman';
+            font-weight: 300;
+            padding-left: 5px;
+        }
+
+        h4 {
+            
+            text-transform: uppercase;
+            font-size: 12px;
+            
+            letter-spacing: 7px;
+            color: var(--primary);
+            padding-left: 0.40px;
+        }
+
+        p {
+            line-height: 1.5;
+            padding-top: 14px;
+        }
+
+        p:nth-child(1) {
+            margin-top: 24px;
+        }
+
+        .card {
+            background-color: var(--light);
+            padding: 40px 20px;
+            margin: 24px auto;
+        }
+
+        .card ol {
+            padding-left: 18px;
+        }
+
+        .card ol li {
+            padding-left: 4px;
+            list-style-type: decimal;
+        }
+
+        /*# sourceMappingURL=page.css.map */
+
+        main {
+            display: -ms-grid;
+            display: grid;
+            height: 100vh;
+        }
+
+        .careers {
+            background: var(--white);
+            max-width: 95ch;
+            padding: 30px;
+            z-index: 2;
+            
+            -ms-grid-column-align: center;
+            justify-self: center;
+            margin-top: 5vmax;
+        }
+
+        @-webkit-keyframes smooth-show {
+            0% {
+                display: none;
+            }
+
+            100% {
+                display: block;
+            }
+        }
+
+        @keyframes smooth-show {
+            0% {
+                display: none;
+            }
+
+            100% {
+                display: block;
+            }
+        }
+
+        .job__checkbox {
+            display: none;
+        }
+
+        .job__checkbox:checked~.job__desc {
+            display: block;
+        }
+
+        .job__desc {
+            padding: 0 20px;
+            display: none;
+            -webkit-animation-name: smooth-show;
+            animation-name: smooth-show;
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+            -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+            -webkit-animation-play-state: running;
+            animation-play-state: running;
+        }
+
+        .job__title {
+            background-color: var(--light);
+            border-radius: 5px;
+            padding: 14px;
+            margin: 14px 0;
+            position: relative;
+        }
+
+        .job__title::before {
+            content: "+";
+            position: absolute;
+            right: 14px;
+            color: var(--dark-50);
+        }
+
+        .job__title:hover {
+            background-color: var(--primary);
+            color: var(--light);
+        }
+
+        .job__title:hover::before {
+            color: var(--light);
+        }
+
+        .job__title h3 {
+            margin-bottom: 15px;
+        }
+
+        .job__title h5 {
+            font-weight: 300;
+        }
+
+        .job__title h5 b {
+            font-weight: 700;
+        }
+
+        /*# sourceMappingURL=careers.css.map */
+    </style>
+</head>
+
+<body>
+    <div  style="padding: 10px;">
+        <a href="./index.html"> |← BACK TO HOME</a>
+    </div>
+    <div style="text-align: center;">
+        
+        <img src="./img/NP-Tech-LOGO.png" alt="   " style="max-width:100PX; padding: 20px" />
+    </div>
+
+    <main>
+        <div class="careers">
+
+            <h4>careers</h4>
+
+            <h1>Join the team</h1>
+
+            <ul>
+                <li>
+                    <input type="checkbox" name="" class="job__checkbox" id="web__dev">
+
+                    <label for="web__dev" class="job__label">
+                        <div class="job__title">
+
+                            <h3>WEB DEVLOPER (INTERN)</h3>
+
+                            <h5><b>Location:</b> Remote, Aurangabad</h5>
+                            <h5><b>Required Experience:</b> 0-3 years</h5>
+
+                        </div>
+
+
+                    </label>
+                    <div class="job__desc">
+
+
+                        <p>
+                            NP Tech is seeking a highly motivated and enthusiastic individual to join our team as a Web
+                            Developer (Intern). In this role, you will work closely with our experienced developers and
+                            designers to develop and maintain websites and web applications.
+                        </p>
+
+                        <p><b>
+                                Responsibilities:
+                            </b></p>
+
+                        <p>
+
+                            Collaborate with our team to design, develop, and maintain websites and web applications.
+                            Write clean, efficient, and well-documented code
+                            Test and debug websites and web applications to ensure they meet project requirements and
+                            specifications
+                            Work with designers to ensure that websites and web applications are visually appealing and
+                            user-friendly
+                            Stay up-to-date with the latest trends and technologies in web development.
+                        </p>
+
+                        <p><b>
+                                Requirements:
+                            </b></p>
+
+                        <p>
+
+                            Currently pursuing a degree in Computer Science or a related field
+                            Strong knowledge of HTML, CSS, JavaScript, and PHP
+                            Familiarity with WordPress and other CMS platforms
+                            Excellent problem-solving and analytical skills
+                            Strong communication and collaboration skills
+                            A passion for web development and a desire to learn and grow in the field
+                            This is an excellent opportunity for a motivated and passionate individual to gain hands-on
+                            experience and learn from experienced professionals in the field. If you're interested in
+                            joining our team as a Web Developer (Intern), please submit your resume and cover letter for
+                            consideration.
+
+                        </p>
+
+                        <a href="mailto: NPTECH26@GMAIL.COM" class="button-sm"> Apply via email</a>
+                    </div>
+
+
+
+
+                </li>
+
+
+
+
+
+
+                <li>
+
+                    <input type="checkbox" name="" class="job__checkbox" id="graphic_design">
+
+                    <label for="graphic_design" class="job__label">
+                        <div class="job__title">
+
+                            <h3> GRAPHIC DISGINER (INTERN)</h3>
+
+                            <h5><b>Location:</b> Remote</h5>
+
+
+                        </div>
+
+
+                    </label>
+                    <div class="job__desc">
+                        <p>
+                            NP Tech is seeking a talented and creative Graphic Designer + UI/UX Designer to join our
+                            team. In this role, you will work closely with our development and marketing teams to create
+                            visually appealing and user-friendly designs for our web applications and marketing
+                            materials.
+                        </p>
+                        <p>
+                            <b>Responsibilities:</b>
+
+                        </p>
+                        <p>Design and develop creative and visually appealing designs for our web applications and
+                            marketing materials
+                            Collaborate with our development and marketing teams to understand their requirements and
+                            design effective solutions
+                            Create wireframes, mockups, and prototypes to communicate your designs to stakeholders
+                            Conduct user research and usability testing to gather feedback and improve the user
+                            experience of our applications
+                            Stay up-to-date with the latest trends and technologies in graphic design and UI/UX design
+                        </p>
+
+                        <p><b>Requirements:</b></p>
+
+                        <p>
+                            Bachelor's degree in graphic design, UI/UX design, or a related field
+                            2+ years of experience in graphic design and UI/UX design
+                            Proficiency in design software such as Adobe Creative Suite, Sketch, or Figma
+                            Strong understanding of design principles and the ability to create visually appealing and
+                            user-friendly designs
+                            Experience with wireframing, prototyping, and user research
+                            Excellent communication and interpersonal skills
+                            Ability to work independently and as part of a team
+                        </p>
+
+                        <p>This is an excellent opportunity for a talented and creative designer to join a growing
+                            company and work on cutting-edge web applications and marketing materials. If you're
+                            interested in joining our team as a Graphic Designer + UI/UX Designer, please submit your
+                            resume and cover letter for consideration.</p>
+
+
+                        <a href="mailto: NPTECH26@GMAIL.COM" class="button-sm"> Apply via email</a>
+                    </div>
+
+                </li>
+                <li>
+
+                    <input type="checkbox" name="" class="job__checkbox" id="backend">
+
+                    <label for="backend" class="job__label">
+                        <div class="job__title">
+
+                            <h3> Backend Developer</h3>
+
+                            <h5><b>Location:</b> Remote, Aurangabad</h5>
+                            <h5><b>Required Experience:</b> 2+ years</h5>
+
+                        </div>
+
+
+                    </label>
+                    <div class="job__desc">
+                        <p>
+                            NP Tech is seeking an experienced Backend Developer to join our team. In this role, you will
+                            work closely with our front-end developers to design, develop, and maintain our web
+                            applications and APIs.
+                        </p>
+                        <p>
+                            <b>Responsibilities:</b>
+
+                        </p>
+                        <p>Design, develop, and maintain scalable and reliable web applications and APIs.
+                            Collaborate with our front-end developers to ensure that our applications are optimized for
+                            performance and user experience.
+                            Work closely with our DevOps team to ensure that our applications are deployed and monitored
+                            effectively.
+                            Participate in code reviews and ensure that our code is maintainable, scalable, and secure.
+                            Stay up-to-date with the latest technologies and trends in web development.
+
+                        </p>
+
+                        <p><b>Requirements:</b></p>
+
+                        <p>
+                            2+ years of experience in backend web development.
+                            Strong proficiency in at least one programming language such as Python, Java, or Ruby.
+                            Experience with relational and non-relational databases such as MySQL, PostgreSQL, or
+                            MongoDB.
+                            Experience with web frameworks such as Django, Flask, or Ruby on Rails.
+                            Familiarity with cloud computing platforms such as AWS or Google Cloud Platform.
+                            Experience with version control systems such as Git.
+                            Excellent problem-solving and analytical skills.
+                        </p>
+
+                        <p>This is an excellent opportunity for an experienced backend developer to join a growing
+                            company and work on cutting-edge web applications and APIs. If you're interested in joining
+                            our team as a Backend Developer, please submit your resume and cover letter for
+                            consideration.</p>
+
+                        <a href="mailto: NPTECH26@GMAIL.COM" class="button-sm"> Apply via email</a>
+                    </div>
+
+                </li>
+                <li>
+
+                    <input type="checkbox" name="" class="job__checkbox" id="hr">
+
+                    <label for="hr" class="job__label">
+                        <div class="job__title">
+
+                            <h3> HR</h3>
+
+                            <h5><b>Location:</b> Aurangabad</h5>
+
+
+                        </div>
+
+
+                    </label>
+                    <div class="job__desc">
+                        <p>
+                            NP Tech is seeking a highly motivated and experienced HR professional to join our team as an
+                            HR Manager. In this role, you will be responsible for managing all aspects of the HR
+                            function, including recruitment, onboarding, employee relations, performance management, and
+                            compliance.
+                        </p>
+                        <p>
+                            <b>Responsibilities:</b>
+
+                        </p>
+                        <p>Develop and implement HR policies and procedures that are consistent with our company culture
+                            and values.
+                            Manage the recruitment process, including sourcing candidates, reviewing resumes, conducting
+                            interviews, and making hiring decisions.
+                            Develop and implement onboarding programs that ensure new employees are integrated into the
+                            company culture and understand their roles and responsibilities.
+                            Manage employee relations issues and provide guidance and support to employees and managers.
+                            Develop and implement performance management programs that ensure employee development and
+                            support company objectives
+                            Ensure compliance with all relevant laws and regulations related to HR.
+                        </p>
+
+                        <p><b>Requirements:</b></p>
+
+                        <p>
+                            Bachelor's degree in HR or a related field
+                            5+ years of experience in HR, with a strong focus on recruitment, employee relations, and
+                            compliance.
+                            Excellent communication and interpersonal skills.
+                            Strong analytical and problem-solving skills.
+                            Ability to work independently and as part of a team.
+                            A strong understanding of HR best practices and regulations.
+                        </p>
+                        <p>This is an excellent opportunity for an experienced HR professional to join a growing company
+                            and make a significant impact on the organization. If you're interested in joining our team
+                            as an HR Manager, please submit your resume and cover letter for consideration.</p>
+
+
+                        <a href="mailto: NPTECH26@GMAIL.COM" class="button-sm"> Apply via email</a>
+                    </div>
+
+                </li>
+
+
+
+            </ul>
+
+            <p>
+                <small>
+                    NP TECH is proud to be an equal opportunity workplace. All qualified applicants will
+                    receive consideration for employment without regard to, and will not be discriminated against based
+                    on age, race, gender, color, religion, national origin, sexual orientation, gender identity, veteran
+                    status, disability or any other protected category.
+                </small>
+
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>
