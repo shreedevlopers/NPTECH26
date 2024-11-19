@@ -1,5 +1,6 @@
 
-ShreeDevelopers - Official NPTECH26 Website
+**ShreeDevelopers** - **Official NPTECH26 Website**
+
 Welcome to the ShreeDevelopers repository, where we present the official website for NPTECH26. This platform showcases the IT services offered by NPTECH26, including web development, data analysis, data entry, internship opportunities, job placement assistance, and learning resources.
 
 Table of Contents
